@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Kingston_Master_of_Tea_Application</AssemblyName>
+    <RootNamespace>Kingston_Master_of_Tea_Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Domain">
+      <HintPath>..\..\Kingston_Master_of_Tea\src\Domain\bin\Debug\net5.0\Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

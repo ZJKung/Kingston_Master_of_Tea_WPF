@@ -1,0 +1,26 @@
+﻿<Window x:Class="Kingston_Master_of_Tea_WPF_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kingston_Master_of_Tea_WPF_UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--<Label Content="{Binding Baverages.Result[0].Id}"/>-->
+        <!--<DataGrid x:Name="Beverages" AlternatingRowBackground="Gray" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>-->
+        <ListView Margin="10" x:Name="Baverages">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding Id}" />
+                    <!--<GridViewColumn Header="Age" Width="50" DisplayMemberBinding="{Binding Age}" />
+                    <GridViewColumn Header="Mail" Width="150" DisplayMemberBinding="{Binding Mail}" />-->
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
